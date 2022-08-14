@@ -29,10 +29,6 @@ def home():
 def favicon():
     return generic_routes.favicon()
 
-@app.route("/robots.txt")
-def robots():
-    return generic_routes.robots()
-
 # Route challenges
 @app.route("/challenge", methods=["GET", "POST"])
 def challenge():

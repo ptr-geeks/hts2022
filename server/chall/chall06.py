@@ -18,6 +18,9 @@ def static(name):
     if data[0] != "files":
         return helpers.serve_static(name)
 
+    if data[-1] == "":
+        del data[-1]
+
     paths = {
         "0001": ("Put title here", "Hello world!"),
         "0023": ("Slike!", "https://www.humanesociety.org/sites/default/files/styles/2000x850/public/2020-07/kitten-510651.jpg"),
@@ -30,7 +33,7 @@ def static(name):
         "1583": ("Rogger", "Pogger"),
         "1877": ("Random", "https://xkcd.com/221/"),
         "2181": ("Kam gres?", "Ne vem kam grem k ne vem kje sm!"),
-        "2400": ("Slon", "Sadež"),
+        "2400": ("Slon", "Sadez"),
         "2869": ("WC", "Uff kok smrdi kle..."),
         "3365": ("SHA256", "https://www.youtube.com/watch?v=dQw4w9WgXcQ"),
         "3550": ("Resistance", "is futile"),
@@ -54,11 +57,14 @@ def static(name):
     }
 
     if len(data) == 2:
-        if data in paths:
-            return paths[data]
-        elif data == "4588":
+        if data[1] in paths.keys():
+            ret = paths[data[1]][1]
+            if ret.startswith("https://"):
+                return redirect(ret)
+            return ret
+        elif data[1] == "4588":
             return "Return to sender"
-        elif data == "6432":
+        elif data[1] == "6432":
             return "Fuuuuuuuuuuuuuuu...zer"
         else:
             return "No data here", 404
@@ -67,6 +73,8 @@ def static(name):
 
         for k in paths.keys():
             html += '<a href="' + ("/s/files/" + k + "/") + '">' + paths[k][0] + '</a><br/>\n'
+
+        return html
     else:
         return "No data here", 404
         

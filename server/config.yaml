@@ -1,34 +1,34 @@
 challenges:
 - name: chall01
   flag: "Sanity check"
-  key: ""
+  key: "1"
 - name: chall02
   flag: "L0r3M 1p5Um"
-  key: ""
+  key: "2"
 - name: chall03
   flag: "ok"
-  key: ""
+  key: "3"
 - name: chall04
   flag: ""
-  key: ""
+  key: "4"
 - name: chall05
   flag: "I was headed in that direction"
-  key: ""
+  key: "5"
 - name: chall06
   flag: "Fuuuuuuuuuuuuuuu...zer"
-  key: ""
+  key: "6"
 - name: chall07
   flag: "lejte2pubci5men2se8zdi3da5se3boste0ful8zabijal4s8temle3ampak1good3luck1anyways"
-  key: ""
+  key: "7"
 - name: chall08
   flag: ""
-  key: ""
+  key: "8"
 - name: chall09
   flag: "No! My advanced security!"
-  key: ""
+  key: "9"
 - name: chall10
   flag: "Reverse engineering seems to be too much for this camp"
-  key: ""
+  key: "10"
 - name: chall11
   flag: "Damn these processes!"
-  key: ""
+  key: "11"

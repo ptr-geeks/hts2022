@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width">
+
+<title>[1] PTR 2022 Hack this site</title>
+<link rel="stylesheet" href="s/styleBSidesTheme.css" type="text/css" media="screen">
+<link rel="stylesheet" href="s/styleHts.css" type="text/css" media="screen">
+<link rel="shortcut icon" type="image/png" href="s/faviconGreen.png"/>
+</head>
+<body>
+    <div class="mainWrap">
+
+        <div class="block txtCenter borderBottom">
+            <h1>Hack this site</h1>
+            <h2>Poletni tabor računalništva 2022</h2>
+        </div>
+
+        <div class="block txtCenter mt4">
+            <h1>7. Izziv: Correction, that's mine!</h1>
+            <p>
+                Prestregli smo sporočilo med mentorjem Davidom in poštnim strežnikom, ki vsebuje sporočilo ostalim mentorjem o novem geslu za WiFi. Ker je sporočilo kriptirano, ne vidimo popolnoma njegovo vsebino, vemo pa, da je pred enkripcijo pošta izgledala tako:
+            </p>
+						<pre style="text-align: left;">
+mentorji2022@ptr.si;david@ptr.si;(geslo)
+						</pre>
+						<p>
+							Sporočilo je bilo zakriptirano z AES v CBC izvedenki in ne poznamo ključa s katerim je bilo to storjeno. V te obliki smo torej prestregli je inicializacijski vektor in sporočilo samo.
+						</p>
+						<pre style="text-align: left;">
+IV: 42d91a765ef7d6a4f34acdc6caf21773
+Message:
+	89da993b576b4639ad6e1d0ae6b35630
+	1d4c9f9b849b5d39373131a34631ee94
+	2b16cc32674b4def3384561265575da7
+	60ac005d5b9a46fc4eb5abc395d66b0f
+						</pre>
+						</p>
+							Pošlji prestreženo sporočilo naprej, tako da ga bo strežnik poslal na naslov "udelezenec@posta.si". Oba podatka pošlji v eni vrstici in enaki heksadecimalni obliki kot na vhodu.
+						</p>
+        </div>
+        <div class="block txtCenter mt4">
+            <p>
+                <form method="POST" autocomplete="off">
+                    <input type="text" name="iv" placeholder="IV" autofocus />
+                    <input type="text" name="message" placeholder="Message" autofocus />
+                    <input type="submit" name="submit" value="Preveri" />
+                </form>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

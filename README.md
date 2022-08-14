@@ -16,10 +16,12 @@ HTS is a series of Hacking challanges with each increasing in difficulty and a c
 
 ### 06. Fuzzer autoindex
 
-### 07. Patcher
+### 07. JS obfuscator
 
-### 08. Inversable crypto
+### 08. Patcher
 
-### 09. Rev
+### 09. Inversable crypto
 
-### 10. Curl file get
+### 10. Rev
+
+### 11. Curl file get
