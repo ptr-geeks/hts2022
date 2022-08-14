@@ -18,14 +18,17 @@ challenges:
   flag: "Fuuuuuuuuuuuuuuu...zer"
   key: ""
 - name: chall07
-  flag: ""
+  flag: "lejte2pubci5men2se8zdi3da5se3boste0ful8zabijal4s8temle3ampak1good3luck1anyways"
   key: ""
 - name: chall08
-  flag: "No! My advanced security!"
+  flag: ""
   key: ""
 - name: chall09
-  flag: "Reverse engineering seems to be too much for this camp"
+  flag: "No! My advanced security!"
   key: ""
 - name: chall10
+  flag: "Reverse engineering seems to be too much for this camp"
+  key: ""
+- name: chall11
   flag: "Damn these processes!"
   key: ""
