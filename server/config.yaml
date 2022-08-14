@@ -1,0 +1,31 @@
+challenges:
+- name: chall01
+  flag: "Sanity check"
+  key: ""
+- name: chall02
+  flag: "L0r3M 1p5Um"
+  key: ""
+- name: chall03
+  flag: "ok"
+  key: ""
+- name: chall04
+  flag: ""
+  key: ""
+- name: chall05
+  flag: "I was headed in that direction"
+  key: ""
+- name: chall06
+  flag: "Fuuuuuuuuuuuuuuu...zer"
+  key: ""
+- name: chall07
+  flag: ""
+  key: ""
+- name: chall08
+  flag: "No! My advanced security!"
+  key: ""
+- name: chall09
+  flag: "Reverse engineering seems to be too much for this camp"
+  key: ""
+- name: chall10
+  flag: "Damn these processes!"
+  key: ""
