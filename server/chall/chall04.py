@@ -5,6 +5,7 @@ import helpers
 def challenge(flag, next_challenge):
     if request.method == "POST":
         if request.cookies.get("b", "1") != "1":
+            print("[INFO] chall04 solved")
             return next_challenge;
         else:
             return redirect(request.url)

@@ -5,6 +5,7 @@ import helpers
 def challenge(flag, next_challenge):
     if request.method == "POST":
         if request.form.get("flag") == flag:
+            print("[INFO] chall01 solved")
             return next_challenge;
         else:
             return redirect(request.url)

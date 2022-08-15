@@ -26,6 +26,7 @@ def challenge(_, next_challenge):
             pt = unpad(cipher.decrypt(ct), AES.block_size).decode('utf-8')
 
             if pt.split(";")[0] == "udelezenec@posta.si":
+                print("[INFO] chall08 solved")
                 return next_challenge
             else:
                 return redirect(request.uri)
