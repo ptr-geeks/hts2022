@@ -12,4 +12,6 @@ def challenge(flag, next_challenge):
         return helpers.uncache(send_from_directory("./templates", "chall07.html", cache_timeout=0))
 
 def static(name):
+    if name == "encrypt.js":
+        return helpers.uncache(send_from_directory("./chall/chall07", "encrypt.js", cache_timeout=0))
     return helpers.serve_static(name)
